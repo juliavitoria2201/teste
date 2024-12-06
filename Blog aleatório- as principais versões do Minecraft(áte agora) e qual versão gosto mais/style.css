@@ -1,0 +1,94 @@
+h2 {
+	font-family: "Britannic Bold";
+	color: #ffff;
+} 
+
+body {
+	background-color:#000;
+	font-family: "Arial";
+	color: #808080;
+	text-align:justify;
+}
+
+i {
+	font-size:15px;
+	font-family: "Arial";
+}
+
+button {
+	cursor: pointer;
+	border: 1px solid #000000;
+	font-family:verdana;
+	color:#ffffff;
+	background-color: #996633;
+}
+
+.coluna{
+	 column-count: 2;
+}
+
+.logo{
+	text-align: center;
+}
+/*menu*/
+.hamburger {
+            width: 30px;
+            height: 15px;
+			position: absolute;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 100%;
+            height: 5px;
+            background-color: #808080;
+            position: absolute;
+            transition: all 0.5s;
+        }
+        .hamburger div:nth-child(1) {
+            top: 0px;
+        }
+        .hamburger div:nth-child(2) {
+            top: 10px;
+		}
+			.hamburger div:nth-child(3) {
+            top: 20px; /* coloca uma treceira linha embaixo das outras duas do menu */
+        }
+         .open div:nth-child(1) {
+            transform: rotate(45deg);
+            top: 10px; /* Posiciona a primeira linha no meio quando aberto */
+        }
+        .open div:nth-child(2) {
+            transform: rotate(-45deg);
+            top: 10px; 
+        }
+        .open div:nth-child(3) {
+            transform: rotate(-45deg);
+            top: 10px; /* Posiciona a terceira linha no meio quando aberto */
+        }
+        .menu {
+            display: none;
+			 position: absolute;
+			float: left;
+            top: 60px; /* Posiciona o menu abaixo do hamburger */
+            left: 20px;
+			color:#808080; /*muda a cor da bolinha na frente do link*/
+        }
+        .menu.open {
+            display: block;
+        }
+		
+		ul:hover a{
+		color:#ffff; /*quando passa o mouse muda a cor*/
+	}
+	ul:hover a:hover{
+		color:#808080; /*quando o mouse esta no outro muda essa cor tambem*/
+	}
+	a {
+		color: #808080;
+	}
+
+
+
+
+
